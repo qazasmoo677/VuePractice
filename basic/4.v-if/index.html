@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>v-for</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-if跟v-showp很像，v-if是不渲染，v-show是渲染但隱藏 -->
+        <p v-if="books.length == 0">目前沒有書</p>
+        <ul v-else>
+            <li v-for="book in books">{{ book }}</li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
