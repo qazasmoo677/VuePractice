@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>v-model modifier</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="book in books" :key="book.Id">{{ book.title }}</li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

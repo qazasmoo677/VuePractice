@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>v-for</title>
+</head>
+<body>
+    <div id="app">
+        <!-- index要放在後面，從0開始 -->
+        <ul>
+            <li v-for="(song, index) in data">
+                第{{ index + 1 }}首歌是 {{ song }}
+            </li>
+        </ul>
+        <hr>
+        <!-- checkbox範例 -->
+        <ul>
+            <li v-for="todo in todos">
+                <input type="checkbox" :checked="todo.complete">
+                {{ todo.text }}
+            </li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
